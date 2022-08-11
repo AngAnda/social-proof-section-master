@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -13,96 +11,87 @@
     />
 
     <title>Frontend Mentor | Social proof section</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
+    <link rel="stylesheet" href="docs/main.css">
     </style>
   </head>
   <body>
 
     <main>
       <section class="information">
-        <div class="text">
-          <h1 class="purple-text">
+        <div class="information__content">
+          <h1 class="information__content__text text--purple">
             10,000+ of our users love our products.
           </h1>
-          <p>
+          <p class="information__content__text">
             We only provide great products combined with excellent customer service.
             See what our satisfied customers are saying about our services.
           </p>
         </div>
-        <aside>
-          <div class="rating">
-            <div class="star"></div>
-            <p class="purple-text">
+        <aside class="rating">
+          <div class="rating_card">
+            <div class="rating_card__star"></div>
+            <p class="rating_card__text text--purple ">
               Rated 5 Stars in Reviews
             </p>
           </div>
-          <div class="rating">
-            <div class="star"></div>
-            <p class="purple-text">
+          <div class="rating_card__star">
+            <div class="rating_card__star"></div>
+            <p class="rating_card__text text--purple ">
               Rated 5 Stars in Report Guru
             </p>
           </div>
-          <div class="rating">
-            <div class="star"></div>
-            <p class="purple-text">
+          <div class="rating_card__star">
+            <div class="rating_card__star"></div>
+            <p class="rating_card__text text--purple ">
               Rated 5 Stars in BestTech
             </p>
           </div>
         </aside>
       </section>
       <section class="costumers">
-        <article class="review">
+        <article class="card__review">
           <header>
-            <div class="hero-photo"></div>
-            <p class="name">
+            <div class="card__review__hero-photo"></div>
+            <p class="card__review__name">
               Colton Smith 
             </p>
-            <p class="verified">
+            <p class="card__review__verified">
               Verified Buyer
             </p>
           </header>
-          <p>
+          <p class="card__review__body">
             "We needed the same printed design as the one we had ordered a week prior.
             Not only did they find the original order, but we also received it in time.
             Excellent!"
           </p>
         </article>
-        <article class="review">
+        <article class="card-review">
           <header>
-            <div class="hero-photo"></div>
-            <p class="name">
+            <div class="card__review__hero-photo"></div>
+            <p class="card__review__name">
               Irene Roberts 
             </p>
-            <p class="verified">
+            <p class="card__review__verified">
               Verified Buyer
             </p>
           </header>
-          <p>
+          <p class="card__review__body">
             "Customer service is always excellent and very quick turn around. Completely
             delighted with the simplicity of the purchase and the speed of delivery."
           </p>
         </article>
-        <article class="review">
+        <article class="card card-review">
           <header>
             <div class="hero-photo">
             </div>
-            <p class="name">
+            <p class="card__review__name">
               Anne Wallace 
             </p>
-            <p class="verified">
+            <p class="card__review__verified">
               Verified Buyer
             </p>
           </header>
-          <p>
+          <p class="card__review__body">
             "Put an order with this company and can only praise them for the very high
             standard. Will definitely use them again and recommend them to everyone!"
           </p>
