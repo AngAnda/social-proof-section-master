@@ -3,6 +3,21 @@ body {
   font-family: "League Spartan", sans-serif;
 }
 
+.text--purple {
+  color: hsl(300deg, 43%, 22%);
+  font-weight: 700;
+}
+
+.information__content__heading {
+  font-size: 3rem;
+  letter-spacing: 0rem;
+}
+.information__content__text {
+  color: hsl(303deg, 10%, 53%);
+  margin-top: 1.5rem;
+  line-height: 1.25rem;
+}
+
 html, * {
   box-sizing: border-box;
 }
@@ -31,10 +46,13 @@ main {
 .information {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 5rem;
 }
 .information__content, .information__rating {
   width: 50%;
+}
+.information__content {
+  width: 35%;
 }
 
 .attribution {

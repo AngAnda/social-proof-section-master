@@ -17,10 +17,15 @@ main{
 }
 
 .information{
-   @include flex-column(1rem, false);
+   @include flex-column(5rem, false);
    &__content, &__rating{
     width: 50%;
    }
+
+   &__content{
+    width: 35%;
+   }
+
 }
 
 .attribution{
