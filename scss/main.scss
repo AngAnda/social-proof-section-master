@@ -1,31 +1,81 @@
-@use "./variables";
-@use "./cards";
-@use "./typography";
-@use "./resets";
+@import "./variables";
+@import "./typography";
+@import "./resets";
 @import "./mixins";
 
 body{
     height: 100vh;
+    width: 100wh;
     @include flex-column(0rem, true);
     justify-content: center;
     align-items: center;
     position: relative;
+    background: url('../images/bg-pattern-bottom-desktop.svg') ;
+    /*
+    background-repeat: repeat-y;
+    background-position: top 100px;*/
 }
 
 main{
     @include flex-column(3rem, true);
+    padding: 0 160px;
 }
 
 .information{
    @include flex-column(5rem, false);
-   &__content, &__rating{
-    width: 50%;
-   }
-
    &__content{
-    width: 35%;
+    max-width: 420px;
    }
+}
 
+.information__rating{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(9, 50px);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap:10px;
+
+    #rating-review{
+        @include grid-pos(1, 1, 5);
+        grid-column: 1/8;
+    }
+    
+    #report-guru{
+        @include grid-pos(2, 2, 4);
+        grid-column: 2/9;
+    }
+    
+    #besttech{
+        @include grid-pos(3, 3, 5);
+        grid-column: 3/10;
+    }
+}
+
+.rating__card{
+    background-color: $Light-Grayish-Magenta;
+    align-self: center;
+    padding: 17px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.rating__card__star{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 1rem;
+}
+
+.icon-star{
+    background-image: url('../images/icon-star.svg') ;
+    height: 1rem;
+    width: 17px;
+    margin: 0 3px
+}
+
+.rating__card__text{
+    display: flex;
 }
 
 .attribution{

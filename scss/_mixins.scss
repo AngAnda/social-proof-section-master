@@ -10,3 +10,8 @@
     }
     gap: $gap;
 }
+
+@mixin grid-pos($row, $column-start, $column-end){
+    grid-row: $row;
+    //grid-column : $column-start / $column-end;
+}
