@@ -1,0 +1,12 @@
+
+
+@mixin flex-column($gap, $column : true ){
+    display: flex;
+    @if $column{
+        flex-direction: column;
+    }
+    @else{
+        flex-direction: row;
+    }
+    gap: $gap;
+}

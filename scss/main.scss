@@ -2,4 +2,30 @@
 @use "./cards";
 @use "./typography";
 @use "./resets";
+@import "./mixins";
+
+body{
+    height: 100vh;
+    @include flex-column(0rem, true);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+main{
+    @include flex-column(3rem, true);
+}
+
+.information{
+   @include flex-column(1rem, false);
+   &__content, &__rating{
+    width: 50%;
+   }
+}
+
+.attribution{
+    position: absolute;
+    bottom: 2rem;
+}
+
 
