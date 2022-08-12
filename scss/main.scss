@@ -5,20 +5,16 @@
 
 body{
     height: 100vh;
-    width: 100wh;
     @include flex-column(0rem, true);
     justify-content: center;
     align-items: center;
     position: relative;
-    background: url('../images/bg-pattern-bottom-desktop.svg') ;
-    /*
-    background-repeat: repeat-y;
-    background-position: top 100px;*/
+    background: url('../images/bg-pattern-bottom-desktop.svg') no-repeat right bottom, url('../images/bg-pattern-top-desktop.svg') no-repeat;
 }
 
 main{
     @include flex-column(3rem, true);
-    padding: 0 250px;
+    padding: 0 200px;
 }
 
 .information{
@@ -79,8 +75,8 @@ main{
 }
 
 .attribution{
-    position: absolute;
-    bottom: 2rem;
+    margin: 0rem auto;
+    
 }
 
 .card__review{
@@ -100,8 +96,6 @@ main{
     border-radius: 50%;
 }
 
-
-
 #photo1{
     @include background('../images/image-colton.jpg');
 }
@@ -118,7 +112,7 @@ main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap:2rem;
-    grid-template-rows: repeat(11, 1.6rem);
+    grid-template-rows: repeat(10, 1.6rem);
 }
 
 
