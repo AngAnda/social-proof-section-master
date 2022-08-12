@@ -40,5 +40,7 @@ $font-weights :(
     }
     &__verified{
         color:$Soft-Pink;
+        font-size: 1rem;
+        font-weight: weight(regular);
     }
 }

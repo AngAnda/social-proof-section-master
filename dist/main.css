@@ -26,6 +26,8 @@ body {
 }
 .card__review__verified {
   color: hsl(333deg, 80%, 67%);
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 html, * {
