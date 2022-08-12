@@ -18,6 +18,16 @@ body {
   line-height: 1.25rem;
 }
 
+.card__review {
+  color: hsl(0deg, 0%, 100%);
+}
+.card__review__name {
+  font-weight: 700;
+}
+.card__review__verified {
+  color: hsl(333deg, 80%, 67%);
+}
+
 html, * {
   box-sizing: border-box;
 }
@@ -109,4 +119,36 @@ main {
 .attribution {
   position: absolute;
   bottom: 2rem;
+}
+
+.card__review {
+  background-color: hsl(300deg, 43%, 22%);
+  padding: 2rem;
+  border-radius: 10px;
+}
+.card__review header {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card__review__hero--photo {
+  height: 2rem;
+  width: 30px;
+  border-radius: 50%;
+}
+
+#photo1 {
+  background-image: url("../images/image-colton.jpg");
+  background-size: cover;
+}
+
+#photo2 {
+  background-image: url("../images/image-irene.jpg");
+  background-size: cover;
+}
+
+#photo3 {
+  background-image: url("../images/image-anne.jpg");
+  background-size: cover;
 }/*# sourceMappingURL=main.css.map */

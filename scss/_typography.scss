@@ -32,3 +32,13 @@ $font-weights :(
         line-height: 1.25rem;
     }
 }
+
+.card__review{
+    color: $White;
+    &__name{
+        font-weight: weight(bold);
+    }
+    &__verified{
+        color:$Soft-Pink;
+    }
+}

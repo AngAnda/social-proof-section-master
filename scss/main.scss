@@ -84,3 +84,31 @@ main{
 }
 
 
+.card__review{
+    background-color: $Very-Dark-Magenta;
+    padding: 2rem;
+    border-radius: 10px;
+    & header{
+        display: flex;
+        gap:1.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.card__review__hero--photo{
+    height: 2rem;
+    width:30px;
+    border-radius: 50%;
+}
+
+#photo1{
+    @include background('../images/image-colton.jpg');
+}
+
+#photo2{
+    @include background('../images/image-irene.jpg');
+}
+
+#photo3{
+    @include background('../images/image-anne.jpg');
+}

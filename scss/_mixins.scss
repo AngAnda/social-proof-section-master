@@ -15,3 +15,8 @@
     grid-row: $row;
     //grid-column : $column-start / $column-end;
 }
+
+@mixin background($url){
+    background-image: url($url);
+    background-size: cover;
+}
