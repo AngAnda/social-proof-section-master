@@ -56,7 +56,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  padding: 0 160px;
+  padding: 0 250px;
 }
 
 .information {
@@ -129,7 +129,7 @@ main {
 .card__review header {
   display: flex;
   gap: 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .card__review__hero--photo {
@@ -151,4 +151,24 @@ main {
 #photo3 {
   background-image: url("../images/image-anne.jpg");
   background-size: cover;
+}
+
+.costumers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  grid-template-rows: repeat(11, 1.6rem);
+}
+
+#card__review__1 {
+  grid-row: 1/9;
+}
+
+#card__review__2 {
+  grid-row: 2/10;
+}
+
+#card__review__3 {
+  grid-row: 3/11;
 }/*# sourceMappingURL=main.css.map */
