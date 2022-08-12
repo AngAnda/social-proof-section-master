@@ -14,7 +14,8 @@ body{
 
 main{
     @include flex-column(3rem, true);
-    padding: 0 200px;
+    padding: 40px 200px;
+    margin-top: 6rem;
 }
 
 .information{
@@ -126,4 +127,36 @@ main{
 
 #card__review__3{
     grid-row: 3/11;
+}
+
+
+@media screen and(max-width:800px) {
+
+    body{
+        height: unset;
+        // text-align: center;
+    }
+
+    main{
+        padding: 0 1rem;
+        margin: 6rem 0;
+    }
+
+    .information, .attribution{
+        text-align: center;
+    }
+
+    .information__content {
+        max-width:  100%;
+        // align-self: center;
+    }
+
+    .information__rating, .costumers, .information{
+       @include flex-column(3rem, true); 
+    }
+
+    .rating__card{
+        width: 100%;
+        @include flex-column(0.7rem, true);
+    }
 }
